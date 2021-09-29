@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontEnd Mentor](https://www.frontendmentor.io/solutions/single-price-grid-component-5QuHq1WgG)
-- Live Site URL: [GitHub Pages](https://hoerrin.github.io/FrontendMentor-single-price-grid-component/)
+- Solution URL: [FrontEnd Mentor](https://www.frontendmentor.io/solutions/four-card-feature-section-g8vrcyAmM)
+- Live Site URL: [GitHub Pages](https://hoerrin.github.io/FrontendMentor-four-card-feature-section/)
 
 ## Author
 
