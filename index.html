@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Four card feature article</title>
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    html {
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      position: relative;
+      display: flex;
+      min-height: 100vh;
+      height: calc(100% + 1rem);
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      background-color: hsl(0, 0%, 98%);
+    }
+
+    header {
+      display: flex;
+    text-align: center;
+    width: 35rem;
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0.5rem;
+    }
+
+    h1 {
+      color: hsl(234, 12%, 34%);
+    }
+
+    p {
+      color: hsl(229, 6%, 66%);
+    }
+
+    .header__title--light {
+      font-weight: 200;
+    }
+
+    .header__title,
+    .header__title--light {
+      font-size: 2.4rem;
+    }
+
+    .header__description {
+      font-weight: 400;
+      margin-top: 1.2rem;
+      margin-bottom: 3rem;
+    }
+
+    .cards__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      width: 21rem;
+      box-shadow: 0px 15px 20px 0px rgba(62, 82, 163, 0.15);
+      border-radius: 10px;
+      padding: 2rem;
+      margin: 2rem 1rem 1rem 1rem;
+    }
+
+    .card__bar--cyan {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: hsl(180, 62%, 55%);
+      height: 4px;
+    }
+
+    .card__bar--red {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: hsl(0, 78%, 62%);
+      height: 4px;
+    }
+
+    .card__bar--orange {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: hsl(34, 97%, 64%);
+      height: 4px;
+    }
+
+    .card__bar--blue {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: hsl(212, 86%, 64%);
+      height: 4px;
+    }
+
+    .card__title {
+      font-size: 1.1rem;
+    }
+
+    .card__description {
+      margin-top: 0.5rem;
+      font-weight: 200;
+      font-size: 0.8rem;
+      color: hsl(229, 6%, 66%);
+    }
+
+    .card__icon--container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 3rem;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media screen and (max-width: 375px) {
+      .header__title, .header__title--light{
+        font-size: 1.6rem;
+      }
+
+      .header__description{
+        width: 20rem;
+      }
+
+      .card{
+        margin: 1rem
+      }
+
+      .cards__container{
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="header__title--light">Reliable, efficient delivery</h1>
+    <h1 class="header__title">Powered by Technology</h1>
+    <p class="header__description">Our Artificial Intelligence powered tools use millions of project data points
+      to ensure that your project is successful</p>
+  </header>
+  <section class="cards__container">
+    <section class="cards__container--row1">
+      <article class="card">
+        <div class="card__bar--cyan"></div>
+        <h1 class="card__title">Supervisor</h1>
+        <p class="card__description">Monitors activity to identify project roadblocks</p>
+        <figure class="card__icon--container">
+          <img class="card__icon" src="./images/icon-supervisor.svg" alt="card icon">
+        </figure>
+      </article>
+    </section>
+    <section class="cards__container--row2">
+      <article class="card">
+        <div class="card__bar--red"></div>
+        <h1 class="card__title">Team Builder</h1>
+        <p class="card__description">Scans our talent network to create the optimal team for your project</p>
+        <figure class="card__icon--container">
+          <img class="card__icon" src="./images/icon-team-builder.svg" alt="card icon">
+        </figure>
+      </article>
+
+      <article class="card">
+        <div class="card__bar--orange"></div>
+        <h1 class="card__title">Karma</h1>
+        <p class="card__description">Regularly evaluates our talent to ensure quality</p>
+        <figure class="card__icon--container">
+          <img class="card__icon" src="./images/icon-karma.svg" alt="card icon">
+        </figure>
+      </article>
+    </section>
+    <section class="cards__container--row3">
+      <article class="card">
+        <div class="card__bar--blue"></div>
+        <h1 class="card__title">Calculator</h1>
+        <p class="card__description">Uses data from past projects to provide better delivery estimates</p>
+        <figure class="card__icon--container">
+          <img class="card__icon" src="./images/icon-calculator.svg" alt="card icon">
+        </figure>
+      </article>
+    </section>
+  </section>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Hoerrin">Patryk Dworakowski</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
